@@ -689,7 +689,7 @@ body.menu-open .mobile-menu{opacity:1;pointer-events:auto;}
 @media(max-width:720px){.lb-prev{left:.5rem;} .lb-next{right:.5rem;} .lb-nav{background:rgba(20,16,10,.65);}}
 
 /* two-doctor team + two-tile awards row */
-.team-grid{max-width:900px;}
+.team-grid{max-width:900px;align-items:start;}
 .awards-row{display:flex;flex-wrap:wrap;gap:1.25rem;align-items:flex-start;}
 .awards-row .award-tile{flex:0 0 auto;}
 .awards-row .award-img{aspect-ratio:auto;height:360px;}
