@@ -899,3 +899,7 @@ body.menu-open .mobile-menu{opacity:1;pointer-events:auto;}
   .team-sub{grid-template-columns:1fr;}
 }
 @media(max-width:420px){.doc-sm{grid-template-columns:112px minmax(0,1fr);}}
+
+/* ---------- team: three equal cards in one row ---------- */
+.team-grid.team-3{max-width:none;align-items:stretch;}
+.team-3 .doc{height:100%;}
