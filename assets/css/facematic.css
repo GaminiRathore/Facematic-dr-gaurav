@@ -872,3 +872,30 @@ body.menu-open .mobile-menu{opacity:1;pointer-events:auto;}
   border:1px solid var(--line-dark);color:var(--gold-3);transition:background var(--med),color var(--med),border-color var(--med);}
 .ftr .ftr-social a:hover{background:var(--gold-2);border-color:var(--gold-2);color:var(--espresso);}
 .ftr-social svg{width:18px;height:18px;}
+
+/* ---------- team: founder card + two smaller cards beneath ---------- */
+.team-v2{display:grid;gap:1.25rem;max-width:980px;}
+.team-v2 .doc{height:auto;}
+.doc-lead{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);}
+.doc-lead .doc-img{aspect-ratio:4/5;}
+.doc-lead .doc-body{align-self:center;padding:var(--s5) var(--s5) var(--s5) var(--s4);}
+.doc-lead h3{font-size:clamp(1.8rem,3vw,2.4rem);}
+.doc-lead .doc-body p:last-child{font-size:.98rem;line-height:1.75;}
+.team-sub{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
+.doc-sm{display:grid;grid-template-columns:140px minmax(0,1fr);}
+.doc-sm .doc-img{aspect-ratio:auto;height:100%;min-height:200px;}
+.doc-sm .doc-body{padding:1.3rem 1.4rem;}
+.doc-sm h3{font-size:1.35rem;}
+.doc-sm .doc-role{font-size:.58rem;letter-spacing:.18em;line-height:1.55;}
+.doc-sm .doc-body p:last-child{font-size:.84rem;line-height:1.6;margin-top:.6rem;}
+.doc-sm-open .doc-img{display:grid;place-items:center;
+  background:repeating-linear-gradient(135deg,var(--butter-2) 0 8px,var(--butter-3) 8px 16px);}
+.doc-sm-open .doc-img img{width:46px;height:46px;object-fit:contain;opacity:.55;transform:none !important;}
+.doc-sm-open .doc-img::after{content:"Photo soon";position:absolute;bottom:.75rem;left:0;right:0;text-align:center;
+  font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;color:var(--slate-2);}
+@media(max-width:860px){
+  .doc-lead{grid-template-columns:1fr;}
+  .doc-lead .doc-body{padding:var(--s3) var(--s3) var(--s4);}
+  .team-sub{grid-template-columns:1fr;}
+}
+@media(max-width:420px){.doc-sm{grid-template-columns:112px minmax(0,1fr);}}
